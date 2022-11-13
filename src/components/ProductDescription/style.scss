@@ -1,0 +1,103 @@
+@import "../../style/vars.scss";
+
+.product__description {
+ &-title {
+    color: $primary-color-orange;
+    font-size: $font-size;
+    font-family: $font-family;
+  }
+
+  &-subtitle {
+    color: $dark-blue;
+    font-size: 4rem;
+    font-family: $font-family;
+  }
+
+  &-text {
+    color: $dark-blue;
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $dark-grayish-blue;
+  }
+
+  &-values {
+    color: $dark-blue;
+    font-family: $font-family;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-price {
+
+      display: flex;
+      align-items: center;
+      
+      color: $dark-blue;
+      font-weight: 700;
+      font-size: 1.8rem;
+
+      .discounts {
+        color: $primary-color-orange;
+        padding: 5px;
+        border-radius: 8px;
+        background-color:   $primary-color-orangePale;
+        margin-left: 20px;
+
+        font-size: $font-size;
+      }
+
+      &.old {
+        margin-top: 10px;
+        color: $grayish-blue;
+        font-size: $font-size;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .product__actions {
+    display: flex;
+    align-items: center;
+
+    font-family: $font-family;
+
+    gap: 80px;
+
+    margin-top: 30px;
+
+    &-counter {
+      width: 30%;
+      height: 4rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      background-color: $light-grayish-blue;
+
+      padding: 0 15px;
+      border-radius: 10px;
+
+      font-size: $font-size;
+      font-weight: 700;
+    }
+
+    &-button {
+      width: 70%;
+      height: 4rem;
+
+      border-radius: 12px;
+      border: none;
+      
+      color: white;
+      background-color: $primary-color-orange;
+      padding: 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+}

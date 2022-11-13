@@ -1,0 +1,58 @@
+@import "../../style/vars.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 5rem;
+    width: 80%; 
+
+    border-bottom: 2px solid $light-grayish-blue;
+
+    top: 0;
+    position: relative;
+
+    &__navigation {
+
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        &-title {
+            font-family: $font-family;
+            color: $dark-blue;
+            font-weight: 700;
+        }
+
+        &-links {
+            display: flex;
+            align-items: center;
+
+            gap: 1.5rem;
+
+            &-link {
+                text-decoration: none;
+                color: $grayish-blue;
+                font-family: $font-family;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.2rem;
+
+        &-avatar {
+
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+
+}
