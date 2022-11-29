@@ -2,12 +2,14 @@
 import Header from "./components/Header/Component.vue";
 import ImagesSection from "./components/ImagesSection/Component.vue";
 import ProductDescription from "./components/ProductDescription/Component.vue"
+import Modal from "./components/ModalProduct/Component.vue"
 
 export default {
   components: {
     Header,
     ImagesSection,
-    ProductDescription
+    ProductDescription,
+    Modal
   },
 };
 </script>
@@ -18,6 +20,7 @@ export default {
     <main>
       <ImagesSection />
       <ProductDescription />
+      <Modal />
     </main>
   </div>
 </template>

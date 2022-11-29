@@ -1,18 +1,25 @@
 <template>
   <div class="containet__product">
     <div class="container__product-image">
-      <img src="../../assets/image-product-1.jpg" v-if="imageActive == 1" />
+      <img src="../../assets/image-product-1.jpg" v-if="imageActive == 1" role="link" />
       <img
         src="../../assets/image-product-2.jpg"
         v-else-if="imageActive == 2"
+        role="link"
+        @click="openModal"
       />
       <img
         src="../../assets/image-product-3.jpg"
         v-else-if="imageActive === 3"
+        role="link"
+        @click="openModal"
+
       />
       <img
         src="../../assets/image-product-4.jpg"
         v-else-if="imageActive === 4"
+        role="link"
+        @click="openModal"
       />
     </div>
 
@@ -47,10 +54,12 @@
   
   
   <script>
+  import { store } from '../../store';
 export default {
   data() {
     return {
       imageActive: 1,
+      store
     };
   },
   computed: {
@@ -71,6 +80,9 @@ export default {
     changeImageActive(imagenumber) {
       this.imageActive = imagenumber;
     },
+    openModal(){
+      store.changeStateModal()
+    }
   },
 };
 </script>
